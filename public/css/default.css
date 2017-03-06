@@ -77,6 +77,10 @@ header.header a{
 @media(max-width: 763px){
 
  /* BEGIN STYLE INDEX.HTML*/
+	.divLogo{
+		height: 250px;
+	}
+
 	div.textIndex{
 		font-size: 20px;
 	}
