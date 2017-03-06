@@ -1,0 +1,91 @@
+
+body{
+	padding: 0;
+	margin: 0;
+	font-family: serif;
+}
+
+ /* BEGIN STYLE INDEX.HTML*/
+.header{
+	width: 100%;
+	color: white;
+	padding: 1%;
+	font-size: 30px;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.divLogo{
+	height: 340px;
+}
+
+.logo{
+	width: 100%;
+	height: 100%;
+}
+
+div.textIndex{
+	text-align: center;
+	font-size: 30px;
+}
+
+.iniciar-game{
+	margin-top: 5%; 
+	font-size: 18px;
+	color: red;
+}
+/* END STYLE INDEX.HTML*/
+
+/* BEGIN STYLE CARRERA.HTML*/
+header.header a{
+	font-size: 12px;
+}
+
+.row .carrera {
+	padding: 1%;
+}
+
+.row .carrera-content .carrera {
+	border-bottom: 2px inset #bbbbbb;
+}
+
+.carrera .info-carrera{
+	text-align: center;
+}
+
+.carrera .info-carrera p {
+	text-align: justify;
+}
+
+.carrera .info-carrera a{
+	margin-top: 2%; 
+	font-size: 18px;
+	color: red;
+}
+
+.row .carrera .img-carrera{
+	height: 200px;
+}
+
+.carrera div img{
+	width: 100%;
+	height: 100%;
+}
+/* END STYLE CARRERA.HTML*/
+
+/* BEGIN STYLE MOVILE RESPONSIVE*/
+@media(max-width: 763px){
+
+ /* BEGIN STYLE INDEX.HTML*/
+	div.textIndex{
+		font-size: 20px;
+	}
+
+	.iniciar{
+		font-size: 12px;
+	}
+ /* END STYLE INDEX.HTML*/
+
+}
+/* BEGIN STYLE MOVILE RESPONSIVE*/
+
