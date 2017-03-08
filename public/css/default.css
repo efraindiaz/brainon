@@ -3,6 +3,7 @@ body{
 	padding: 0;
 	margin: 0;
 	font-family: serif;
+	background-color: #eee;
 }
 
  /* BEGIN STYLE INDEX.HTML*/
@@ -10,9 +11,9 @@ body{
 	width: 100%;
 	color: white;
 	padding: 1%;
-	font-size: 30px;
+	font-size: 2em;
 	text-align: center;
-	margin-bottom: 5%;
+	margin-bottom: 3%;
 }
 
 .divLogo{
@@ -37,16 +38,17 @@ div.textIndex{
 /* END STYLE INDEX.HTML*/
 
 /* BEGIN STYLE CARRERA.HTML*/
-header.header a{
-	font-size: 12px;
-}
-
 .row .carrera {
 	padding: 1%;
+	background-color: white;
 }
 
 .row .carrera-content .carrera {
 	border-bottom: 2px inset #bbbbbb;
+}
+
+.carrera-content{
+	margin-bottom: 0;
 }
 
 .carrera .info-carrera{
@@ -58,13 +60,12 @@ header.header a{
 }
 
 .carrera .info-carrera a{
-	margin-top: 2%; 
-	font-size: 18px;
+	font-size: 1em;
 	color: red;
 }
 
 .row .carrera .img-carrera{
-	height: 200px;
+	height: 150px;
 }
 
 .carrera div img{
