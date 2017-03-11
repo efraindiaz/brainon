@@ -73,6 +73,15 @@ header.header a{
 }
 /* END STYLE CARRERA.HTML*/
 
+
+/* BEGIN STYLE NOSOTROS.HTML*/
+.imgProfile{
+	width: 250px;
+	height: 250px;
+}
+/* END STYLE NOSOTROS.HTML*/
+
+
 /* BEGIN STYLE MOVILE RESPONSIVE*/
 @media(max-width: 763px){
 
