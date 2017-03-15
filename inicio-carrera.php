@@ -20,18 +20,24 @@
 
 <body>
     <header class="header blue">
-        <strong>Nombre carrera</strong>
+        <?php if(isset($infoCarrera)) {?>
+        <strong><?php print $infoCarrera['carrera'] ?></strong>
+        <?php } else{?>
+        <strong> :(</strong>
+        <?php } ?>
     </header>
+
+    <?php if(isset($globalRanking)){  ?>
     <div class="container">
         <div class="row">
             <div class="col s10 offset-s1">
                 <div class="card  z-depth-5">
-                    <div class="card horizontal" style="margin-bottom:0px; ">
+                    <div class="card horizontal no-bootom-card">
                     <div class="card-image">
-                        <img class="imgProfile" src="public/images/img-carrera.png">
+                        <img class="imgProfile" src="public/images/<?php print $infoCarrera['img_carrera'] ?>">
                     </div>
                     <div class="card-stacked">
-                        <div class="card-content" style="text-align:center; padding-top: 0px !important; padding-bottom: 0px !important;">
+                        <div class="card-content card-content-table center-align" style="">
                             <span class="card-title">Mejores puntuaciones</span>
                             <table class="centered">
                                 <thead>
@@ -44,7 +50,9 @@
 
                                 <tbody>
 
-                                    <?php 
+                                    <?php
+
+                                        if($globalRanking != null){ //verificamos que no llege vacia 
                                         foreach ($globalRanking as $rk) {
                                     ?>
                                         <tr>
@@ -55,6 +63,13 @@
 
                                     <?php
                                         }
+                                    }else{ //Si llega vacio el ranking imprimimos un mensaje indicandolo?> 
+                                                                                
+                                        <td></td>
+                                        <td>Aun no hay registros, se el primero :)</td>
+                                        <td></td>
+                                    <?php    
+                                    }
                                     ?>
                                 </tbody>
                               </table>
@@ -66,7 +81,7 @@
                          
                 </div>
                 <div class="row">
-                        <div class="col s12" style="text-align:center;">
+                        <div class="col s12 center-align">
                             <div class="col s6" >
                                 <div class="card-action">
                                   <a href="#">Regresar</a>
@@ -84,6 +99,20 @@
             </div>
         </div>        
     </div>
+
+    <?php }?>
+
+     <?php if(isset($error)) {?>
+    <div class="row">
+        <div class="col s4 offset-s4 center-align">
+        
+            <strong><?php print $error ?></strong>
+            <br>
+            <br>
+            <strong><a href="carreras.html">Regresar a Carreras</a></strong>
+        </div>
+    </div>
+    <?php }?>
 </body>
 <script type="text/javascript" src="public/js/materialize.min.js"></script>
 <script type="text/javascript" src="public/js/jquery.min.js"></script>

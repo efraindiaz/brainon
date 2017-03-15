@@ -74,6 +74,20 @@ header.header a{
 /* END STYLE CARRERA.HTML*/
 
 
+/*BEGIN STYLE INICIO-CARRERA.PHP*/
+
+.no-bootom-card{
+	margin-bottom:0px !important;
+}
+
+.card-content-table{
+	padding-top: 0px !important; 
+	padding-bottom: 0px !important;
+}
+
+/* END STYLE INICIO-CARRERA.PHP*/
+
+
 /* BEGIN STYLE NOSOTROS.HTML*/
 .imgProfile{
 	width: 250px;

@@ -5,11 +5,27 @@
 
 require_once('model/ModeloCarrera.php');
 
-	$idCarrera =  $_GET['rq-car'];
+	if (isset($_GET['rq-car'])) {
 
-	$buscarCarrera = new Carrera_modelo();
+	    $idCarrera =  $_GET['rq-car'];
 
-	$globalRanking = $buscarCarrera->get_ranking($idCarrera);
+		$buscarCarrera = new Carrera_modelo();
+
+		$infoCarrera = $buscarCarrera->get_info($idCarrera);
+
+		$globalRanking = $buscarCarrera->get_ranking($idCarrera);
+
+
+	}else{
+	    // Fallback behaviour goes here
+
+	    $error = 'Algo a salido mal :(';
+
+	}
+
+
+
+	
 
 	//$infoCarrera = $buscarCarrera->get_info_cerrera($idCarrera);
 
