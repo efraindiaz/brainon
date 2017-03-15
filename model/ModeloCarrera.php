@@ -1,18 +1,18 @@
- 
-	<?php
-
-	//include_once("obj_contact.php");
-
-	class Carrera_modelo{
+<?php
+		
+		
+		class Carrera_Modelo{
 
 		private $conn;
 
 		private $ranking;
 
+
 		//private $info;
 
 
 		public function __construct(){
+
 
 			require_once('connection.php');
 			
@@ -36,14 +36,16 @@
 
 		public function get_ranking($idCarrera){
 
+
 			//extraer el ranking de carrera seleccionada
 
+			//$sql = "SELECT * FROM ranking WHERE id_carrera = ".$idCarrera;
 			$sql = "SELECT * FROM ranking WHERE id_carrera = ".$idCarrera." ORDER by puntos DESC LIMIT 3";
 
 			$result = $this->conn->query($sql);
 
 			$rows = $result->fetchAll();
-	
+
 			foreach ($rows as $rank) {
 
 				$this->ranking[] = $rank;
@@ -57,5 +59,4 @@
 
 	}
 
-
- ?>
+?>

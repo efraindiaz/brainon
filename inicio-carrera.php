@@ -84,12 +84,12 @@
                         <div class="col s12 center-align">
                             <div class="col s6" >
                                 <div class="card-action">
-                                  <a href="#">Regresar</a>
+                                  <a href="carreras.html">Regresar</a>
                                 </div>
                             </div>
                             <div class="col s6">
                                 <div class="card-action">
-                                  <a href="#">Jugar</a>
+                                  <a href="game-pad.php">Jugar</a>
                                 </div>
                             </div>
                         </div>
