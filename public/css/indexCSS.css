@@ -2,7 +2,8 @@
 body{
 	padding: 0;
 	margin: 0;
-	font-family: serif;
+	font-family: roboto;
+	background-color: #eee;
 }
 
  /* BEGIN STYLE INDEX.HTML*/
@@ -10,13 +11,22 @@ body{
 	width: 100%;
 	color: white;
 	padding: 1%;
-	font-size: 30px;
+	font-size: 2em;
 	text-align: center;
-	margin-bottom: 5%;
+	margin-bottom: 3%;
 }
 
 .divLogo{
 	height: 300px;
+}
+
+.logo-header{
+	position: absolute;
+	float: left;
+	width: 5%;
+	height: 8%;
+	margin-left: 1%;
+	margin-top: .5%;
 }
 
 .logo{
@@ -26,7 +36,7 @@ body{
 
 div.textIndex{
 	text-align: center;
-	font-size: 25px;
+	font-size: 20px;
 }
 
 .iniciar-game{
@@ -34,44 +44,15 @@ div.textIndex{
 	font-size: 18px;
 	color: red;
 }
-/* END STYLE INDEX.HTML*/
 
-/* BEGIN STYLE CARRERA.HTML*/
-header.header a{
-	font-size: 12px;
-}
-
-.row .carrera {
-	padding: 1%;
-}
-
-.row .carrera-content .carrera {
-	border-bottom: 2px inset #bbbbbb;
-}
-
-.carrera .info-carrera{
+.container .row{
 	text-align: center;
 }
 
-.carrera .info-carrera p {
-	text-align: justify;
+.row a.nosotros{
+	font-size: 1.2em;
 }
-
-.carrera .info-carrera a{
-	margin-top: 2%; 
-	font-size: 18px;
-	color: red;
-}
-
-.row .carrera .img-carrera{
-	height: 200px;
-}
-
-.carrera div img{
-	width: 100%;
-	height: 100%;
-}
-/* END STYLE CARRERA.HTML*/
+/* END STYLE INDEX.HTML*/
 
 
 /*BEGIN STYLE INICIO-CARRERA.PHP*/
