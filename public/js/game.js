@@ -77,8 +77,7 @@ $(function(){
           startingTop: '4%', 
           endingTop: '10%', 
           ready: function(modal, trigger) { 
-            clearInterval(interval);
-            resetCountDown(); //Restablecemos el contador para barra de tiempo                  
+            stopTimer();                         
             var next = parseInt(localStorage.getItem("contador")) + 1;
             localStorage.setItem("contador", next);
             //set item local storage
@@ -86,6 +85,7 @@ $(function(){
 
           },
           complete: function() {
+            resetCountDown(); //Restablecemos el contador para barra de tiempo 
             if(parseInt(localStorage.getItem("contador")) === 6){
                 $('#modalMatchExito').modal('open');
             } 
@@ -106,7 +106,8 @@ $(function(){
           ready: function(modal, trigger) {
             //localStorage.setItem("contador", 1);
             //set item local storag
-            resetAuxiliares();                                
+            resetAuxiliares();
+            stopTimer();                                
           },
           complete: function() {}
         }
@@ -125,6 +126,7 @@ $(function(){
             localStorage.setItem("contador", 1);
             //set item local storag
             resetAuxiliares();
+            stopTimer();
           },
           complete: function() {}
         }
@@ -260,6 +262,7 @@ function miLetra(letra){
             if(palabra === defPalabra){
                 palabra = '';
                 console.log("match palabra")
+                console.log("segundos: ----"+contador+"-----");
                 matchPalabraCompleta();
             }
             //Si no esta correcta la palabra
@@ -302,13 +305,20 @@ function borraLetra(){
 //Si completo la palabra muestra modal completado
 function matchPalabraCompleta(){
 
-     $('.hack-input').css("color" ,"#38a03c");
+    //Pintamos de verde los inputs letras
+    $('.hack-input').css("color" ,"#38a03c");
+    //Contador contiene los puntos restantes al completar la palabra
+    //los guardamos como puntos extra  
+    var masPuntos = parseInt(localStorage.getItem("puntos")) + 10;
+
+    var extraPT = parseInt(localStorage.getItem("puntosExtra")) + contador;
+
+    localStorage.setItem("puntos", masPuntos);
+    localStorage.setItem("puntosExtra", extraPT); 
+
+     
+                         
      $('#modalMatchCompleto').modal('open');
-
-     var masPuntos = parseInt(localStorage.getItem("puntos")) + 30;
-
-     localStorage.setItem("puntos", masPuntos);             
-
 }
 
 //palabra erronea, pinta las letras de rojo
@@ -327,6 +337,10 @@ function resetCountDown(){
 
   contador = 30;
 
+}
+
+function stopTimer(){
+  clearInterval(interval);
 }
 
          

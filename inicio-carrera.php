@@ -139,6 +139,7 @@
             localStorage.setItem("contador", 1);
             localStorage.setItem("vidas", 3);
             localStorage.setItem("puntos", 0);
+            localStorage.setItem("puntosExtra", 0);
         }
     })
 </script>
