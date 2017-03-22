@@ -44,63 +44,68 @@
 
     <!--Modal Descripcion concepto-->
 
-    <div id="modalShowInfo" class="modal">
-        <div class="modal-content">
+    <div id="modalShowInfo" class="modal  modalSP">
+        <div class="modal-content contentModal">
           <h4>Una Pista</h4>
-          <p id="setTexto"></p>
+          <img class="imgModal" src="public/images/clue.png">
+          <p class="txtPista" id="setTexto"></p>
         </div>
         <div class="modal-footer">
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst">Agree</a>
         </div>
     </div>
 
     <!--Modal se termino el tiempo-->
 
-    <div id="modalFinTiempo" class="modal">
-        <div class="modal-content">
+    <div id="modalFinTiempo" class="modal modalSP">
+        <div class="modal-content contentModal">        
           <h4>Se termino el tiempo</h4>
+          <img class="imgModal" src="public/images/time.png">
           <p>A bunch of text</p>
         </div>
         <div class="modal-footer">
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst">Agree</a>
         </div>
     </div>
     
 
     <!--Modal completado -->
 
-    <div id="modalMatchCompleto" class="modal">
-        <div class="modal-content">
+    <div id="modalMatchCompleto" class="modal modalSP">
+        <div class="modal-content contentModal">
           <h4>Completado</h4>
+          <img class="imgModal" src="public/images/success.png">
           <p>Informacion de puntuacion</p>
         </div>
         <div class="modal-footer">
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst">Agree</a>
         </div>
     </div>
 
     <!--Modal ingresar nombre -->
-    <div id="modalPerdedor" class="modal">
-        <div class="modal-content">
+    <div id="modalPerdedor" class="modal modalSP">
+        <div class="modal-content contentModal">
           <h4>Gracias por jugar</h4>
+          <img class="imgModal" src="public/images/like.png">
           <p>Infor perdedor jaja</p>
         </div>
         <div class="modal-footer">
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst">Agree</a>
         </div>
     </div>
     
 
     <!--Modal fin del juego GANA-->
 
-    <div id="modalMatchExito" class="modal">
-        <div class="modal-content">
+    <div id="modalMatchExito" class="modal modalSP">
+        <div class="modal-content contentModal">
           <h4>Felicidades has terminado</h4>
+          <img class="imgModal" src="public/images/star.png">
           <p>Informacion de puntuacion</p>
           <p>input para nombre</p>
         </div>
         <div class="modal-footer">
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst">Agree</a>
         </div>
     </div>
 

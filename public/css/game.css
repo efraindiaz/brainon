@@ -153,3 +153,27 @@
           width: 100px !important;
           height: 100px !important;
         }
+
+        /*Modals*/
+
+.modalSP{
+    width: 500px;
+    height: 500px;
+}
+.btnPst{
+    left: -190px;
+
+}
+
+.imgModal{
+    width: 190px;
+    height: 190px;
+}
+
+.contentModal{
+    text-align: center;
+}
+
+.txtPista{
+    text-align: justify;
+}
