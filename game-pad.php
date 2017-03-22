@@ -54,7 +54,7 @@
         <div class="divider"></div>
         <div class="modal-footer">        
           <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst1">SIGUIENTE</a>
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst2">SALIR</a>
+          <a href="index.html" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst2">SALIR</a>
         </div>
     </div>
 
@@ -72,7 +72,7 @@
         <div class="divider"></div>
         <div class="modal-footer">
           <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst1">SIGUIENTE</a>
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst2">SALIR</a>
+          <a href="index.html" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst2">SALIR</a>
         </div>
     </div>
     
@@ -91,7 +91,7 @@
         <div class="divider"></div>
         <div class="modal-footer">
           <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst1">SIGUIENTE</a>
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst2">SALIR</a>
+          <a href="index.html" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst2">SALIR</a>
         </div>
     </div>
 
@@ -101,12 +101,20 @@
           <h4>Gracias por jugar</h4>
           <div class="divider"></div>
           <img class="imgModal" src="public/images/like.png">
-           <p>Puntos Totales: <span id="puntosTo">99999</span></p>
+           <p>Puntos Totales: <span id="puntosTo">99999</span></p>           
+        </div>
+        <form>
+          <div class="row">
+        <div class="input-field col s8 offset-s2">
+          <input id="nombre" type="text" class="validate inputNombre">
+          <label class="labelNombre" for="nombre">Escribe tu Nombre:</label>
+          </div>
         </div>
         <div class="divider"></div>
         <div class="modal-footer">
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst3">FINALIZAR</a>
+          <a href="index.html" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst3">FINALIZAR</a>
         </div>
+        </form>
     </div>
     
 
@@ -117,15 +125,20 @@
           <h4>Felicidades has terminado</h4>
           <div class="divider"></div>
           <img class="imgModal" src="public/images/star.png">
-          <p>Puntos Totales: <span id="puntosTo">99999</span></p>
-          <form>
-            
-          </form>
+          <p>Puntos Totales: <span id="puntosTo">99999</span></p>                  
+        </div>
+        <form>
+        <div class="row">
+        <div class="input-field col s8 offset-s2">
+          <input id="nombre" type="text" class="validate">
+          <label for="nombre">Escribe tu Nombre:</label>
+          </div>
         </div>
         <div class="divider"></div>
         <div class="modal-footer">
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst3">FINALIZAR</a>
-        </div>
+          <a href="index.html" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst3">FINALIZAR</a>
+        </div>  
+        </form>      
     </div>
 
 

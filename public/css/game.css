@@ -186,3 +186,13 @@
 .txtPista{
     text-align: justify;
 }
+
+input[type=text]:focus:not([readonly]){
+    border-bottom: 1px solid #2196F3;
+    box-shadow: 0 1px 0 0 #2196F3;
+}
+
+input[type=text]:focus:not([readonly])+label{
+    color: #2196F3;
+}
+
