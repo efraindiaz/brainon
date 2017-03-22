@@ -44,27 +44,35 @@
 
     <!--Modal Descripcion concepto-->
 
-    <div id="modalShowInfo" class="modal  modalSP">
+    <div id="modalShowInfo" class="modal modalSP">
         <div class="modal-content contentModal">
-          <h4>Una Pista</h4>
+          <h4>Una Pista</h4>           
+          <div class="divider"></div>
           <img class="imgModal" src="public/images/clue.png">
           <p class="txtPista" id="setTexto"></p>
         </div>
-        <div class="modal-footer">
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst">Agree</a>
+        <div class="divider"></div>
+        <div class="modal-footer">        
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst1">SIGUIENTE</a>
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst2">SALIR</a>
         </div>
     </div>
 
     <!--Modal se termino el tiempo-->
 
-    <div id="modalFinTiempo" class="modal modalSP">
+    <div id="modalFinTiempo" class="modal  modalSP">
         <div class="modal-content contentModal">        
           <h4>Se termino el tiempo</h4>
+          <div class="divider"></div>
           <img class="imgModal" src="public/images/time.png">
-          <p>A bunch of text</p>
+          <p>Puntos Obtenidos: <span id="puntosOb">999</span></p>
+          <p>Puntos Totales: <span id="puntosTo">99999</span></p>
+          <p>Vidas Restantes: <span id="puntosTo">***</span></p>
         </div>
+        <div class="divider"></div>
         <div class="modal-footer">
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst">Agree</a>
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst1">SIGUIENTE</a>
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst2">SALIR</a>
         </div>
     </div>
     
@@ -74,11 +82,16 @@
     <div id="modalMatchCompleto" class="modal modalSP">
         <div class="modal-content contentModal">
           <h4>Completado</h4>
+          <div class="divider"></div>
           <img class="imgModal" src="public/images/success.png">
-          <p>Informacion de puntuacion</p>
+          <p>Puntos Obtenidos: <span id="puntosOb">999</span></p>
+          <p>Puntos Totales: <span id="puntosTo">99999</span></p>
+          <p>Vidas Restantes: <span id="puntosTo">***</span></p>
         </div>
+        <div class="divider"></div>
         <div class="modal-footer">
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst">Agree</a>
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst1">SIGUIENTE</a>
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst2">SALIR</a>
         </div>
     </div>
 
@@ -86,11 +99,13 @@
     <div id="modalPerdedor" class="modal modalSP">
         <div class="modal-content contentModal">
           <h4>Gracias por jugar</h4>
+          <div class="divider"></div>
           <img class="imgModal" src="public/images/like.png">
-          <p>Infor perdedor jaja</p>
+           <p>Puntos Totales: <span id="puntosTo">99999</span></p>
         </div>
+        <div class="divider"></div>
         <div class="modal-footer">
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst">Agree</a>
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst3">FINALIZAR</a>
         </div>
     </div>
     
@@ -100,12 +115,16 @@
     <div id="modalMatchExito" class="modal modalSP">
         <div class="modal-content contentModal">
           <h4>Felicidades has terminado</h4>
+          <div class="divider"></div>
           <img class="imgModal" src="public/images/star.png">
-          <p>Informacion de puntuacion</p>
-          <p>input para nombre</p>
+          <p>Puntos Totales: <span id="puntosTo">99999</span></p>
+          <form>
+            
+          </form>
         </div>
+        <div class="divider"></div>
         <div class="modal-footer">
-          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst">Agree</a>
+          <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat btnPst3">FINALIZAR</a>
         </div>
     </div>
 

@@ -158,16 +158,25 @@
 
 .modalSP{
     width: 500px;
-    height: 500px;
-}
-.btnPst{
-    left: -190px;
-
+    height: initial;
 }
 
-.imgModal{
-    width: 190px;
-    height: 190px;
+.btnPst1{
+    left: -60px;
+}
+
+.btnPst2{
+    left: -160px;
+}
+
+.btnPst3{
+    left: -174px;
+}
+
+.imgModal {
+    margin-top: 10px;
+    width: 35%;
+    height: 35%;
 }
 
 .contentModal{
