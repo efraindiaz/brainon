@@ -15,6 +15,12 @@ require_once('model/ModeloCarrera.php');
 
 		$globalRanking = $buscarCarrera->get_ranking($idCarrera);
 
+		/*$numLetras = strlen($concepto['palabra']); 
+
+        setcookie('totalLetras', $numLetras, time()+4800);
+
+        print $_COOKIE['totalLetras'];*/
+
 
 	}else{
 	    // Fallback behaviour goes here

@@ -33,7 +33,10 @@
 						Terapia Física, es una profesión dentro del área de salud y ciencia del movimiento aplicada a la rehabilitación, también llamada Fisioterapia.	
 						</p>
 						<div class="divider"></div>
-						<a class="waves-effect waves-teal btn-flat" href="inicio-carrera.php?rq-car=1">Empezar
+						<!--a class="waves-effect waves-teal btn-flat" href="inicio-carrera.php?rq-car=1">Empezar
+							<i class="material-icons right">input</i>
+						</a-->
+						<a class="waves-effect waves-teal btn-flat" href="#" onclick="initLS(1);">Empezar
 							<i class="material-icons right">input</i>
 						</a>
 					</div>
@@ -51,7 +54,7 @@
 						Ingeniería en biotecnología está orientada a diseñar y mejorar procesos tecnológicos basados en sistemas vivos.
 						</p>
 						<div class="divider"></div>
-						<a class="waves-effect waves-teal btn-flat" href="inicio-carrera.php?rq-car=2">Empezar
+						<a class="waves-effect waves-teal btn-flat" href="#" onclick="initLS(2);">Empezar
 							<i class="material-icons right">input</i>
 						</a>
 					</div>
@@ -69,7 +72,7 @@
 						Ingeniería Biomédica se puede definir como la aplicación de la ingeniería al servicio de la salud y se caracteriza por conocimientos de áreas como la Biología.
 						</p>
 						<div class="divider"></div>
-						<a class="waves-effect waves-teal btn-flat" href="inicio-carrera.php?rq-car=3">Empezar
+						<a class="waves-effect waves-teal btn-flat" href="#" onclick="initLS(3);">Empezar
 							<i class="material-icons right">input</i>
 						</a>
 					</div>
@@ -77,8 +80,28 @@
 			</div>
 		</div>
 	</div>
-</body>
 	<script type="text/javascript" src="public/js/materialize.min.js"></script>
 	<script type="text/javascript" src="public/js/jquery.min.js"></script>
 	<script type="text/javascript" src="public/js/holder.min.js"></script>
+	<script>
+
+		$(function(){
+			localStorage.setItem("contador", 1);
+		});
+
+		function initLS(carrera){
+		
+		var c = carrera;
+		localStorage.setItem("carrera", c);
+		localStorage.setItem("contador", 1);
+							
+		if(c === 1){location.href = "inicio-carrera.php?rq-car=1";}
+		else if(c === 2){location.href = "inicio-carrera.php?rq-car=2";}
+		else if(c === 3){location.href = "inicio-carrera.php?rq-car=3";}
+	}
+	</script>
+	
+</body>
+	
+	
 </html>

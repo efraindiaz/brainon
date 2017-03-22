@@ -116,5 +116,31 @@
 </body>
 <script type="text/javascript" src="public/js/materialize.min.js"></script>
 <script type="text/javascript" src="public/js/jquery.min.js"></script>
+<script>
+    $(function(){
+        var carrera = 0;
+        var contador;
+        if(window.localStorage){
+            /*PONER LAS POSICIONES EN ORDEN ALEATORIO*/
+            
+            arrayOrdenTF = [
+                        {"posicion":2},
+                        {"posicion":5},
+                        {"posicion":1},
+                        {"posicion":9},
+                        {"posicion":10},
+                        {"posicion":7},
+                        {"posicion":3},
+                        {"posicion":8},
+                        {"posicion":6},
+                        {"posicion":4}];
+
+            //localStorage.setItem('ordenTF', JSON.stringify(arrayOrdenTF));  
+            localStorage.setItem("contador", 1);
+            localStorage.setItem("vidas", 3);
+            localStorage.setItem("puntos", 0);
+        }
+    })
+</script>
 
 </html>

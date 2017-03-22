@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="public/js/jquery.min.js"></script>
+</head>
+<body>
+
+	<a href="#" onclick="init();"> Inicia localstorage</a>
+	<a href="#" onclick="update();">Modifica datos</a>
+
+	<script>
+
+		function init(){
+			if(window.localStorage){
+
+				arr = [{"name":"a", "age": 1, "sport":"football"},
+				{"name":"b", "age": 2, "sport":"volley"},
+				{"name":"c", "age": 3, "sport":"basket"}];
+				
+
+				arrayOrden = [
+								{"posicion": 2},
+								{"posicion":5},
+								{"posicion":1},
+								{"posicion":9},
+								{"posicion":10},
+								{"posicion":7},
+								{"posicion":3},
+								{"posicion":8},
+								{"posicion":6},
+								{"posicion":4}];								
+
+				localStorage.setItem('persons', JSON.stringify(arr));
+
+				var show = JSON.parse(localStorage.getItem('persons'));
+
+				console.log(show)
+
+			}
+		}
+
+		function update(){
+
+				var persons = JSON.parse(localStorage.persons);
+				for (var i = 0; i < persons.length; i++) {
+				   if('b' === persons[i].name){  //look for match with name
+				       persons[i].age += 2;  //add two
+				       break;  //exit loop since you found the person
+				   }
+				}
+
+				localStorage.setItem("persons", JSON.stringify(persons));
+				var show = JSON.parse(localStorage.getItem('persons'));
+
+				console.log(show)
+
+		}
+
+
+	</script>
+</body>
+</html>
