@@ -195,7 +195,7 @@ function setVidas(){
 //Render a todo el contenedor del juego
 function buscaPrimerMatch(){
 
-    var next = localStorage.getItem("contador");
+    var next = nextPalabra();
     var carrera = localStorage.getItem("carrera");
 
     $.ajax({
@@ -216,7 +216,7 @@ function buscaPrimerMatch(){
 //Busca solo el concepto para mostrarlo en el modal de pista
 function buscaSoloConcepto(){
 
-    var next = localStorage.getItem("contador");
+    var next =  nextPalabra();
     var carrera = localStorage.getItem("carrera");
 
     $.ajax({
@@ -232,6 +232,20 @@ function buscaSoloConcepto(){
 
 }
 
+/*INICIA PALABRA SIGUIENTE DEL ARRAY QUE SE TRAJO*/
+function nextPalabra(){
+  var next = JSON.parse(localStorage.ordenTF);
+  var count = localStorage.getItem("contador") - 1;
+  var dato;
+
+  //for (var i = 0; i < next.length; i++) {
+      dato = next[count].posicion;
+  //}
+
+  console.log(dato)
+  return dato;
+}
+/*FIN PALABRA SIGUIENTE DEL ARRAY QUE SE TRAJO*/
 
 //Agrega una letra a los inputs vacios al precional el boton 
 function miLetra(letra){

@@ -120,27 +120,37 @@
     $(function(){
         var carrera = 0;
         var contador;
-        if(window.localStorage){
-            /*PONER LAS POSICIONES EN ORDEN ALEATORIO*/
-            
-            arrayOrdenTF = [
-                        {"posicion":2},
-                        {"posicion":5},
-                        {"posicion":1},
-                        {"posicion":9},
-                        {"posicion":10},
-                        {"posicion":7},
-                        {"posicion":3},
-                        {"posicion":8},
-                        {"posicion":6},
-                        {"posicion":4}];
+        var arr = [];
+        var arrayPalabra = new Array();
 
-            //localStorage.setItem('ordenTF', JSON.stringify(arrayOrdenTF));  
+        function llenarAleatorios(a){
+            var v = Math.floor(Math.random() * (11 - 1) + 1);
+            if(!a.some(function(e){return e == v})){
+                a.push(v);
+            }
+        }
+
+        while(arr.length < 10 && 10 < 11){
+            llenarAleatorios(arr);
+        }
+
+        for (var i = 0; i < arr.length; i++) {
+            arrayPalabra.push({"posicion": arr[i]});
+        }
+
+        if(window.localStorage){
+
+            localStorage.setItem('ordenTF', JSON.stringify(arrayPalabra));  
+
             localStorage.setItem("contador", 1);
             localStorage.setItem("vidas", 3);
             localStorage.setItem("puntos", 0);
             localStorage.setItem("puntosExtra", 0);
         }
+
+        $(document).ready(function(){
+            console.log(arrayPalabra)
+        });
     })
 </script>
 

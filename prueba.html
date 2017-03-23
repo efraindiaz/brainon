@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>sadasdas</title>
+	<script>
+	var arr = [];
+
+	function llenarAleatorios(a){
+	    var v = Math.floor(Math.random() * 11);
+	    if(!a.some(function(e){return e == v})){
+	    	console.log(v);
+	        a.push(v);
+	    }
+	}
+
+	while(arr.length < 10 && 10 < 11){
+	    llenarAleatorios(arr);
+	}
+
+	var arrayPalabra = new Array();
+
+	for (var i = 0; i < arr.length; i++) {
+		console.log(arr[i]);
+		arrayPalabra.push({"posicion": arr[i]});
+	}
+
+	console.log(arrayPalabra);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

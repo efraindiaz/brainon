@@ -2,11 +2,8 @@
 
             //Creando array para incrustarlo en inputs
             $letrasPalabra = array();
-
             $letrasPalabra = str_split($concepto['palabra']);
-
             $cantLetras = strlen($concepto['palabra']);   
-
 
          ?>
 
@@ -80,6 +77,7 @@
                     <div class="row test-box">
                         <!-- RANDOM LETRAS BOTONES -->        
                         <?php foreach ($letrasPalabra as $letra) { ?>
+
                             <div class="col s1 contendor-btn-letras">
                                 <a class="btn btn-letras" href="#" onclick="miLetra('<?php print $letra ?>');"><?php print $letra ?></a>
                             </div>
